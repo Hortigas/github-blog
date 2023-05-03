@@ -1,8 +1,7 @@
-import { Nunito } from 'next/font/google';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from "next/image";
 import avatar from "../public/avatar.png";
-
-const nunito = Nunito({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -10,7 +9,11 @@ export default function Home() {
       <div className="w-full p-8 rounded-lg bg-base-profile shadow-lg flex gap-8">
         <Image src={avatar} alt="profile picture" />
         <div>
-          <h2 className="text-2xl font-bold ">Cameron Williamson</h2>
+          <div className="flex justify-between">
+            <h2 className="text-2xl font-bold text-base-title my-2">Cameron Williamson</h2>
+            <a className="text-xs text-blue flex items-center">GITHUB<FontAwesomeIcon height={12} icon={faArrowUpRightFromSquare} className="ml-2" /></a>
+          </div>
+          <span>Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu viverra massa quam dignissim aenean malesuada suscipit. Nunc, volutpat pulvinar vel mass.</span>
         </div>
       </div>
     </main>

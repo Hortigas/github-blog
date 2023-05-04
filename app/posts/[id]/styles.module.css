@@ -1,0 +1,14 @@
+.post p {
+    margin-bottom: 1.5rem;
+}
+
+.post a {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.post pre {
+    padding: 1rem;
+    background-color: var(--base-post);
+    border-radius: 2px;
+}
